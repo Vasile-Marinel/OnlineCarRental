@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="Assets\Img\audi-a6-2018.png" />
     <Content Include="Assets\Img\available_car.png" />
+    <Content Include="Assets\Img\back3.jpg" />
     <Content Include="Assets\Img\bmw-7-series-2019.jpeg" />
     <Content Include="Assets\Img\customer-management-4.png" />
     <Content Include="Assets\Img\honda.png" />
@@ -84,6 +85,7 @@
     <Content Include="Assets\Img\rented-car.png" />
     <Content Include="Assets\Img\return.png" />
     <Content Include="Assets\Img\signUp.png" />
+    <Content Include="Assets\Img\signup1.png" />
     <Content Include="Assets\Img\Tesla.jpeg" />
     <Content Include="Assets\Libraries\css\bootstrap-grid.css" />
     <Content Include="Assets\Libraries\css\bootstrap-grid.min.css" />

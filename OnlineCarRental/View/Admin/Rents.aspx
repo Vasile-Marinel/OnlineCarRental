@@ -7,7 +7,7 @@
                     <div class="col-5"></div>
                     <div class="col-5">
                         <h3 class="text-danger pl-4">Rented Cars</h3>
-                        <img src="../../Assets/Img/rented-car.png"/></div>
+                        <img src="../../Assets/Img/rented-car.png" width="200" /></div>
                     <div class="col"></div>
                 </div>
                 <div class="row">

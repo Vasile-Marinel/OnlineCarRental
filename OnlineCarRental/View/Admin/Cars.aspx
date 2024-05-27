@@ -9,7 +9,7 @@
                     <div class="col"></div>
                     <div class="col">
                         <h3 class="text-danger pl-4">Manage Cars</h3>
-                        <img src="../../Assets/Img/jeep.png" height="130px"/></div>
+                        <img src="../../Assets/Img/jeep.png" width="300"/></div>
                     <div class="col"></div>
                 </div>
                 <div class="row">
@@ -52,9 +52,9 @@
                             <br />
 
                             <label id="ErrorMsg" runat="server" class="text-danger"></label><br />
-                            <asp:Button type="submit" id="EditBtn" class="btn btn-warning" Text="Edit" runat="server" OnClick="EditBtn_Click"/>
-                            <asp:Button type="submit" id="SaveBtn" class="btn btn-success" Text="Add" runat="server" OnClick="SaveBtn_Click"/>
-                            <asp:Button type="submit" id="DeleteBtn" class="btn btn-danger" Text="Delete" runat="server" OnClick="DeleteBtn_Click"/>
+                            <asp:Button type="submit" id="EditBtn" class="btn btn-outline-warning my-2 my-sm-0" Text="Edit" runat="server" OnClick="EditBtn_Click"/>
+                            <asp:Button type="submit" id="SaveBtn" class="btn btn-outline-success my-2 my-sm-0" Text="Add" runat="server" OnClick="SaveBtn_Click"/>
+                            <asp:Button type="submit" id="DeleteBtn" class="btn btn-outline-danger my-2 my-sm-0" Text="Delete" runat="server" OnClick="DeleteBtn_Click"/>
 
                           </form>
 

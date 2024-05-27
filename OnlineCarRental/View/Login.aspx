@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="../Assets/Libraries/css/bootstrap.min.css"/>
 </head>
 <body>
+    <style>
+    body {
+        background-image: url('../Assets/Img/back3.jpg');
+        background-size: cover; /* pentru a asigura că imaginea acoperă întreaga pagină */
+    }
+</style>
+
+
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-3"></div>
@@ -16,7 +24,7 @@
                     <div class="col"></div>
                     <div class="col">
                         <h3 class="text-warning">Car Rental Login</h3>
-                        <img src="../Assets/Img/orange_jeep.png"/>
+                        <img src="../Assets/Img/orange_jeep.png" width="300"/>
                     </div>
                     <div class="col"></div>
                 </div>

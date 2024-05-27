@@ -24,6 +24,7 @@ namespace OnlineCarRental.Models
             cmd.Connection = Conn;
         }
 
+        //Execută o interogare SQL și returnează rezultatele într-un DataTable.
         public DataTable GetData(string Query)
         {
             dt = new DataTable();
@@ -32,6 +33,7 @@ namespace OnlineCarRental.Models
             return dt;
         }
 
+        //Execută o comandă SQL care modifică datele din baza de date și returnează numărul de rânduri afectate.
         public int SetData(string Query)
         {
             int rcnt = 0;

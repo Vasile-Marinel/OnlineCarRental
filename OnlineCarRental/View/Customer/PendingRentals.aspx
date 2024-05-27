@@ -20,7 +20,8 @@
                 </asp:GridView>
                         <label id="InfoMsg" runat="server" class="text-danger">
                     </label>
-                <asp:Button type="submit" id="DeleteBtn" class="btn btn-danger btn-block" Text="Delete" runat="server" Width="356px" OnClick="DeleteBtn_Click"/>
+                        <br />
+                <asp:Button type="submit" id="DeleteBtn" class="btn btn-danger btn-block" Text="Cancel the rental" runat="server" Width="356px" OnClick="DeleteBtn_Click"/>
             </div>
                 </form>
             </div>

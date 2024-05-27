@@ -20,22 +20,32 @@ namespace OnlineCarRental.View
         {
             try
             {
-
                 string name = FullNameTb.Value;
                 string adr = SignAddTb.Value.ToString();
                 string phone = SignPhoneTb.Value.ToString();
                 string pass = SignPassTb.Value.ToString();
-                string Query = "insert into CustomerTbl values('{0}','{1}','{2}','{3}')";
-                Query = string.Format(Query, name, adr, phone, pass);
-                Conn.SetData(Query);
-                Response.Redirect("Customer/Cars.aspx");
 
-                ErrorMsg.InnerText = "Account Created";
+                string checkQuery = "SELECT COUNT(*) FROM CustomerTbl WHERE CustName = '{0}'";
+                checkQuery = string.Format(checkQuery, name);
+                int count = Convert.ToInt32(Conn.GetData(checkQuery).Rows[0][0]);
+
+                if (count > 0)
+                {
+                    ErrorMsg.InnerText = "Username already exists. Please choose another username.";
+                }
+                else
+                {
+                    string insertQuery = "INSERT INTO CustomerTbl VALUES('{0}','{1}','{2}','{3}')";
+                    insertQuery = string.Format(insertQuery, name, adr, phone, pass);
+                    Conn.SetData(insertQuery);
+
+                    ErrorMsg.InnerText = "Account Created";
+                    Response.Redirect("Customer/Cars.aspx");
+                }
             }
             catch (Exception Ex)
             {
-
-                //throw;
+                // În caz de eroare, afișăm un mesaj de eroare
                 ErrorMsg.InnerText = Ex.Message;
             }
         }

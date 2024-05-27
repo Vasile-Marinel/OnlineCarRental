@@ -55,6 +55,8 @@ namespace OnlineCarRental.View.Customer
                 Conn.SetData(Query);
                 UpdateCar();
                 ShowCars();
+
+                InfoMsg.InnerText = "The rental has been cancelled";
             }
             catch (Exception Ex)
             {

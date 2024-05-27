@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="../Assets/Libraries/css/bootstrap.min.css"/>
 </head>
 <body>
+
+        <style>
+    body {
+        background-image: url('../Assets/Img/back3.jpg');
+        background-size: cover; /* pentru a asigura că imaginea acoperă întreaga pagină */
+    }
+</style>
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-4">
@@ -15,7 +22,7 @@
                     <div class="col-lg-5"></div>
                     <div class="col-lg-5">
                         <h3 class="text-danger pl-4">SignUp</h3>
-                        <img src="../Assets/Img/signUp.png" height="130px"/></div>
+                        <img src="../Assets/Img/signup1.png" height="130px"/></div>
                     <div class="col-lg-3"></div>
                 </div>
                 <div class="row">
